@@ -2,7 +2,7 @@
 Повторный READ-ONLY preflight 16.11.2026 перед изменениями.
 Account luxhypnomaster, User ID351374601, совпадает с owner обоих видимых repo:
 - https://github.com/luxhypnomaster/sulfi-hypnotherapy — private.
-- https://github.com/luxhypnomaster/master-alchemica — private, ID1460251832, не archived.
+- https://github.com/luxhypnomaster/master-alchemica — теперь PUBLIC, ID1460251832, не archived. Видимость изменил владелец; отличие от исходного PRIVATE описано в docs/MA-001_OWNER_DECISIONS.md. Прежнее private — исторический факт preflight, не текущая видимость.
 User permissions обоих: admin/maintain/pull/push/triage. App installation182378375, selection=all: contents/actions/workflows/issues/pull_requests write; checks/metadata/statuses read. Administration/secrets permission отсутствуют. User admin flag не расширяет scope App. Создание repo больше не требуется.
 gh auth status/API подтверждены; GH_TOKEN не извлекался. Git author проверен: Sergey Bondaruk, email соответствует владельцу первоначального README commit.
 
