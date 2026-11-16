@@ -9,7 +9,7 @@
 | QA-04 | PASS | README/policy/draft разделяют CLIENT, editorial MASTER, MA |
 | QA-05 | DEVIATION | Repo принадлежит владельцу, но теперь Public по его решению; исходный PRIVATE не выполнен. Решение документировано |
 | QA-06 | PASS | Организационные файлы в отдельном MA repo, foundation SHA и PR1 проверены |
-| QA-07 | PASS для проверенного SHA | run43906397645 повторён владельцем: SUCCESS, реальный docs step, foundation db943e2. Новый HEAD проверяется отдельно в PR |
+| QA-07 | PASS для main baseline | PR CI43923438172 SUCCESS на63421fd; main CI43931467982 SUCCESS наcf8e025. Финальный docs-only PR проверяется отдельно до merge |
 | QA-08 | PARTIAL | Write credential и процедурный запрет описаны; изолированный read-only ещё не создан |
 | QA-09 | PASS для аудита | Реальные paths/commit; code/doc/unknown разделены, лицензии не выдуманы |
 | QA-10 | PASS как draft | Версии, данные, roles, migrations, compatibility tests предложены |
@@ -18,4 +18,4 @@
 | QA-13 | PASS | Реестр и отчёты MA-001 |
 | QA-14 | PASS | Точные минимальные owner actions, без выдачи секретов |
 
-Итог: PARTIAL; постоянная привязка среды BLOCKED/не подтверждена, bootstrap проверяется по BOOTSTRAP_REPORT.
+Итог: фундамент репозитория COMPLETE, общий MA-001 PARTIAL. Независимая Codex среда BLOCKED_TOOLING; это не скрывается успешным CI или чистым local clone. Точный статус — docs/MA-001_STATUS.json.

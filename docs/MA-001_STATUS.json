@@ -1,0 +1,36 @@
+{
+  "task": "MA-001",
+  "specRevision": "1.1",
+  "overallStatus": "PARTIAL",
+  "repositoryFoundationStatus": "COMPLETE",
+  "assessmentBasis": "current repository and permissions plus observed CI; independent Codex launch not inferred",
+  "acceptedBaseline": "cf8e0255c60711eb0081af9486acdf760591d335",
+  "mergedFoundationPR": "https://github.com/luxhypnomaster/master-alchemica/pull/1",
+  "acceptedBaselineCI": "https://github.com/luxhypnomaster/master-alchemica/actions/runs/43931467982",
+  "visibility": {
+    "actual": "public",
+    "ownerDecisionRecorded": true,
+    "originalPrivateRequirement": "documented owner deviation"
+  },
+  "checks": {
+    "mainAndOrigin": "PASS",
+    "requiredReportsAndContracts": "PASS",
+    "localOrganizationalCheck": "PASS",
+    "freshLocalCheckout": "PASS; same managed machine, not a new Codex environment",
+    "sulfiRead": "PASS; reads only performed",
+    "independentCodexEnvironment": "BLOCKED_NO_LAUNCH_OR_PUBLISH_TOOL",
+    "publishedSourceConfig": "NOT_VERIFIED; source_config_id=null"
+  },
+  "remainingBlocker": "This session cannot create or launch another managed Codex task/environment or publish its configuration. Existing persisted files and a fresh local clone cannot establish independent Codex startup.",
+  "sulfiAccess": {
+    "sourceCommit": "363a0244ce761e317dd09a6c5cb366d1e8ba7315",
+    "changesPerformed": 0,
+    "serverEnforcedReadOnly": false,
+    "restriction": "procedural; existing App credential is write-capable"
+  },
+  "ma002": {
+    "handoffPrepared": true,
+    "implementationStarted": false,
+    "requiresSeparateTask": true
+  }
+}
