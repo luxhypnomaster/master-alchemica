@@ -8,8 +8,8 @@
 | QA-03 | PASS в проверенной области | Нет удалённых writes; local status чистый, 51 branch refs совпадают. Не полный audit log |
 | QA-04 | PASS | README/policy/draft разделяют CLIENT, editorial MASTER, MA |
 | QA-05 | PASS | Существующий private MA repo владельца проверен 16.11.2026 |
-| QA-06 | PENDING | Файлы в MA checkout; commit/PR evidence будет в BOOTSTRAP_REPORT |
-| QA-07 | BLOCKED | Нет MA Actions run; локальный checker не назван GitHub CI PASS |
+| QA-06 | PASS | Файлы pushed в новый private repo, foundation SHA и PR1 проверены |
+| QA-07 | BLOCKED | Реальный run43906397645 FAILURE до steps: failed payments/spending limit; локальный PASS не подменяет CI |
 | QA-08 | PARTIAL | Write credential и процедурный запрет описаны; изолированный read-only ещё не создан |
 | QA-09 | PASS для аудита | Реальные paths/commit; code/doc/unknown разделены, лицензии не выдуманы |
 | QA-10 | PASS как draft | Версии, данные, roles, migrations, compatibility tests предложены |
