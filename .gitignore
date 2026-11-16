@@ -1,0 +1,31 @@
+# Credentials and signing
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*service-account*.json
+# Private records and media
+private-data/
+recordings/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.wav
+*.mp3
+*.m4a
+*.mp4
+# Build and local tooling
+.dart_tool/
+build/
+android/local.properties
+*.apk
+*.aab
+__pycache__/
+*.pyc
+.DS_Store

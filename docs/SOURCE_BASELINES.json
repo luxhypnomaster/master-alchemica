@@ -1,0 +1,9 @@
+{
+  "task": "MA-001",
+  "sourceRepository": "https://github.com/luxhypnomaster/sulfi-hypnotherapy",
+  "sourceRef": "feat/task18-native-background-transfer",
+  "sourceCommit": "363a0244ce761e317dd09a6c5cb366d1e8ba7315",
+  "policy": "analysis only; separate checkout or isolated source-only snapshot; never push or modify Sulfi",
+  "technicalReadOnly": false,
+  "credentialsNote": "Current App has contents write; procedural prohibition is not credential isolation."
+}
