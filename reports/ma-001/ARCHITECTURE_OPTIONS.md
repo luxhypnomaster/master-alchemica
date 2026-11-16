@@ -20,4 +20,4 @@
 UI текущей версии для нескольких repos не наблюдался; гарантировать его поддержку нельзя. Если конфигурация поддерживает только один repo, основным выбрать MA, а Sulfi держать отдельным безопасным checkout/snapshot. Не клонировать его внутрь MA git tree.
 Обновление: сверить чистоту analysis checkout → получить новый одобренный ref штатным reader → detached SHA → проверить source paths/schema diff → обновить SOURCE record в отчётах. Не push, не запускать CI Sulfi, не менять её конфигурацию.
 
-Актуальное продолжение: https://github.com/luxhypnomaster/master-alchemica теперь Public по решению владельца; PR1 открыт. Постоянная среда пока не подтверждена.
+Актуальное продолжение: https://github.com/luxhypnomaster/master-alchemica Public по решению владельца; PR1 объединён, main cf8e025 и CI43931467982 проверены. Постоянная независимая Codex среда пока не подтверждена; чистый checkout и CI не подменяют её.

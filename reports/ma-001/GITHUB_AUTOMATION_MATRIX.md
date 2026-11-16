@@ -13,6 +13,6 @@
 | Actions settings | endpoint-specific admin | Не подтверждено; ранее Sulfi READ403 | Sulfi запрещена | Не повторяли/не меняли |
 | environment publish | UI/config tool | Нет доступного tool | Только отдельная MA среда | BLOCKED, source_config=null |
 | secrets | secrets permission | App scope отсутствует | Изменения запрещены | Не запрашивались/не менялись |
-| merge/release | owner decision | Не проверяли | Не выбран для автоматического выполнения | Не выполнялось |
+| docs-only merge | явное owner decision, green CI | Разрешён последним заданием; проверяется на новом MA PR | Только безопасные документы MA | Выполняется после проверки PR; release не разрешён |
 | server/OAuth/production | отдельное полномочие | Не проверяли | Запрещено | Не выполнялось |
 Пробных writes в Сульфи нет. App installation/permissions/credentials не изменялись.

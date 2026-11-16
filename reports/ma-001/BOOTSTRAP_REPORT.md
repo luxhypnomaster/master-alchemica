@@ -1,14 +1,10 @@
 # MA-001 — BOOTSTRAP_REPORT
-Target https://github.com/luxhypnomaster/master-alchemica, owner luxhypnomaster, ID1460251832.
-Исторически repo был private, сейчас API подтверждает Public по решению владельца. Это отступление от исходного PRIVATE редакции1.1, см. docs/MA-001_OWNER_DECISIONS.md; агент видимость не менял.
-Initial main ab7e9f673070b016e75ec13c8d9303d2d61fe995. Организационная ветка chore/ma-001-setup, PR https://github.com/luxhypnomaster/master-alchemica/pull/1 открыт, не merged, конфликтов с main при проверке нет.
-Foundation db943e22e461d8b9ba70eb27756b3f87a8015fb6; evidence-only f265ef8f0367dcff7d96c3ff27b9e6468d004097. Настоящая финальная версия после этого отчёта определяется HEAD в PR; не путать её с предыдущим foundation.
-Файлы: README, AGENTS, .gitignore, policy, contracts draft, CODEX_ACCESS, SOURCE_BASELINES, owner visibility decision, восемь отчётов и acceptance self-review; минимальный workflow и text/JSON checker. Исходники Сульфи, личные данные, credentials и функциональное приложение не добавлены.
-
-## CI evidence
-[run43906397645](https://github.com/luxhypnomaster/master-alchemica/actions/runs/43906397645) первоначально FAILURE до runner. Владелец повторил его: сейчас SUCCESS, docs job133492641015, реальный step Check source-only organizational structure SUCCESS; лог содержит PASS:18 text files. Проверенный head_sha db943e22e461d8b9ba70eb27756b3f87a8015fb6, checkout синтетического merge355c53cd63eb5c9ecf35cf6be55a5c16add7d4ca с initial main.
-Этот результат не является CI для f265ef8 или нового финального commit. При публикации актуализированных отчётов обычный PR synchronize создаёт новую проверку; её SHA/run/conclusion проверяются отдельно и фиксируются в финальном локальном evidence и ответе. [skip ci] в новом commit не используется.
-Workflow не менялся: pinned checkout SHA, persist-credentials:false, contents:read; Python stdlib, без deploy/secrets/APK. Billing/settings/permissions не менялись агентом.
-Предыдущий skip-ci commit сохранён как история; его причиной был действовавший тогда account blocker. Повторная оплата/увеличение бюджета больше не предлагаются по старой ошибке: имеющийся SUCCESS подтверждён.
-Локальные checks, diff review, scope/file inventory и проверка относительных ссылок выполняются для финальных текстов. Они не подменяют remote CI и не подтверждают весь security/clinical contract.
-Merge/release:0, Sulfi writes/CI/deploy:0. Постоянная конфигурация не опубликована и не подтверждена: source_config_id=null.
+Фундамент отдельного MA repo выполнен. https://github.com/luxhypnomaster/master-alchemica, owner luxhypnomaster, ID1460251832; теперь Public по решению владельца, видимость/permissions не менялись агентом.
+Исходная main ab7e9f673070b016e75ec13c8d9303d2d61fe995; foundation db943e22e461d8b9ba70eb27756b3f87a8015fb6, финальный PR1 HEAD63421fdaba2369535025942119572544ef8abfa0.
+[PR1](https://github.com/luxhypnomaster/master-alchemica/pull/1) уже merged16.11.2026 18:41:23UTC; merge commit cf8e0255c60711eb0081af9486acdf760591d335. Указание «PR1 открыт, требуется merge владельца» больше неактуально.
+[PR CI43923438172](https://github.com/luxhypnomaster/master-alchemica/actions/runs/43923438172) SUCCESS на63421fd; [main CI43931467982](https://github.com/luxhypnomaster/master-alchemica/actions/runs/43931467982) SUCCESS наcf8e025, docs step реально выполнен. Предыдущая billing ошибка — история, не текущий блокер.
+README/AGENTS/policy/contracts, source pin, owner decisions и восемь отчётов в main. Workflow не меняется: pinned checkout, persist-credentials:false, contents:read; stdlib checker, без deploy/secrets/APK.
+Финальное организационное уточнение выполняется из chore/ma-001-final-acceptance: актуализирует отчёты после merge, фиксирует machine-readable status и handoff без реализации MA-002. Текущее задание явно разрешает агенту docs-only PR и merge после успешных проверок; новых repository/прав не создаёт. SHA/CI такого уточнения фиксируются после readback в финальном evidence.
+Локальная проверка структуры/JSON, обязательных отчётов, ссылок и scope PASS. Чистый checkout принятого main на той же машине также PASS без GH credential/установки пакетов; это не отдельная управляемая среда Codex.
+Отдельный Codex launch/publish остаётся BLOCKED_TOOLING: source_config_id=null, create/launch/publish/UI tool не предоставлены. COMPLETE всего MA-001 не объявлен. Архивное ТЗ не переписывается.
+Sulfi writes/PR/CI/deploy0; production/OAuth/secrets/data0. Flutter/Android/server сборки0. Подготовлена только документация следующего этапа.
